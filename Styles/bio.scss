@@ -19,6 +19,7 @@
 }
 
 @import "./partials/_colors";
+@import "./partials/_screensizes";
 
 .header{
     display:flex;
@@ -56,6 +57,10 @@
             border-bottom: 4px solid white;
             font-weight: 600;
         }
+    }
+    @media (min-width: $tablet){
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
 }

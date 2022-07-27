@@ -55,6 +55,12 @@
   border-bottom: 4px solid white;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
 
 .hero {
   background-image: url(../Assets/Images/hero-bio.jpg);
