@@ -171,6 +171,12 @@
   font-family: avenir;
   color: #323232;
 }
+@media (min-width: 768px) {
+  .gallery__title {
+    padding-left: 1rem;
+    font-size: 2rem;
+  }
+}
 .gallery__container {
   display: flex;
   flex-direction: column;

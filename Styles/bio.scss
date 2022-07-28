@@ -166,6 +166,10 @@
         font-weight: 600;
         font-family: avenir;
         color: $primary;
+        @media(min-width:$tablet){
+            padding-left: 1rem;
+            font-size: 2rem;
+        }
     }
     &__container{
         display:flex;
