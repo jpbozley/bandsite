@@ -28,6 +28,9 @@
     padding: 0rem;
     margin: 0rem;
     justify-content: space-between;
+    @media (min-width:$tablet) {
+        padding-left: 1.5rem;
+    }
     &__title{
         font-size: 1.5rem;
         line-height: 2rem;
@@ -93,6 +96,10 @@
         color: white;
         position: relative;
         z-index: 3;
+        @media (min-width:$tablet) {
+            font-size:3rem;
+            padding-left:1.5rem;
+        }
     }
 }
 
@@ -192,6 +199,18 @@
 .footer{
     background-color: $primary;
     padding:1rem;
+    @media (min-width:$tablet) {
+        padding-left:3rem;
+        padding-right: 3rem;
+    }
+    &__container{
+        align-items: center;
+        @media (min-width:$tablet) {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
     &__title{
         color: $primary3;
         font-family: avenir;
@@ -202,9 +221,36 @@
         color: $primary3;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        }
+        @media (min-width:$tablet) {
+            margin-left:2rem;
+        }    
+    }
     &__icon{
         padding-right: 1rem;
+    }
+    &__site-name-top{
+        display:none;
+        color: $primary3;
+        font-family: avenir;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 0;
+        @media (min-width:$tablet) {
+            display:inline-flex;
+            justify-self: flex-end;
+            }
+    }
+    &__contact{
+        @media (min-width:$tablet) {
+            display:flex;
+            flex-direction: row;
+        }
+    }
+    &__grouping{
+        @media(min-width:$tablet){
+            padding-right: 2.5rem;
+        }
     }
     &__name{
         font-family: avenir;
@@ -244,6 +290,9 @@
         font-size: 1.5rem;
         line-height: 2rem;
         margin: 0;
+        @media (min-width:$tablet) {
+            display:none;
+        }
     }
     &__copyright{
         line-height: 1.125rem;
