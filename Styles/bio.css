@@ -66,7 +66,7 @@
 @media (min-width: 1280px) {
   .header__logo {
     padding-left: 5rem;
-    width: 25vw;
+    width: 20vw;
   }
 }
 .header__link {
@@ -91,6 +91,9 @@
   text-align: center;
   font-size: 1rem;
   width: 50vw;
+}
+.header__nav-item:hover {
+  color: palevioletred;
 }
 @media (min-width: 768px) {
   .header__nav-item {
@@ -306,11 +309,15 @@
 .gallery__photo {
   width: 100vw;
   padding: 0.5rem 1rem;
+  filter: grayscale(1);
 }
 @media (min-width: 768px) {
   .gallery__photo {
     width: 30vw;
   }
+}
+.gallery__photo:hover {
+  filter: grayscale(0);
 }
 
 .footer {
@@ -319,8 +326,14 @@
 }
 @media (min-width: 768px) {
   .footer {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .footer__container {
@@ -331,6 +344,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .footer__container-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 .footer__title {
