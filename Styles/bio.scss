@@ -20,6 +20,7 @@
 
 @import "./partials/_colors";
 @import "./partials/_screensizes";
+@import "./partials/_typography";
 
 .header{
     display:flex;
@@ -39,7 +40,7 @@
         line-height: 2rem;
         font-family: avenir;
         font-weight: 400;
-        color: white;
+        color: $primary3;
         margin: 1rem;
         margin-bottom: 0rem;
         text-align: center;
@@ -59,13 +60,10 @@
     }
     &__nav-item{
         padding:1rem 3rem;
-        color: white;
+        color: $primary3;
         font-family: avenir;
         font-weight: 600;
         font-size:1rem;
-        // @media (min-width:$tablet) {
-        //     font-size: 1.5rem;
-        // }
         &--active{
             border-bottom: 4px solid white;
             font-weight: 600;
@@ -109,7 +107,7 @@
     &__title{
         font-family: avenir;
         font-weight: 600;
-        color: white;
+        color: $primary3;
         position: relative;
         z-index: 3;
         @media (min-width:$tablet) {
@@ -133,9 +131,7 @@
         margin-right: 10vw;  
       }
     &__title{
-        font-family: avenir;
-        font-weight: 600;
-        color: $primary;
+        @include title-text;
         font-size: 1.5rem;
         @media (min-width:$tablet) {
             font-size: 2rem;
@@ -148,9 +144,7 @@
         margin-bottom:1rem;
     }
     &__quote{
-        font-family: avenir;
-        color: $primary;
-        font-weight: 600;
+        @include title-text;
         line-height: 1.5rem;;
         margin:0;
     }
@@ -197,9 +191,7 @@
     &__title{
         font-size: 1.5rem;
         line-height: 2rem;
-        font-weight: 600;
-        font-family: avenir;
-        color: $primary;
+        @include title-text;
         padding-top:1rem;
         @media(min-width:$tablet){
             padding-left: 1rem;
@@ -281,34 +273,16 @@
         }
     }
     &__name{
-        font-family: avenir;
-        font-weight: 600;
-        font-size: .875rem;
-        line-height: 1.375rem;
-        color: $primary3;
-        margin:0;
+        @include contact-text;
     }
     &__org{
-        font-family: avenir;
-        font-weight: 600;
-        font-size: .875rem;
-        line-height: 1.375rem;
-        color: $primary3;
-        margin: 0;
+        @include contact-text;
     }
     &__info{
-        font-family: avenir;
-        line-height: 1.125rem;
-        font-weight: 400;
-        font-size: .8125rem;
-        color: $primary3
+        @include info-text;
     }
     &__email{
-        font-family: avenir;
-        line-height: 1.125rem;
-        font-weight: 400;
-        font-size: .8125rem;
-        color: $primary3
+        @include info-text;
     }
     &__site-name{
         padding-top: 2rem;
@@ -323,10 +297,6 @@
         }
     }
     &__copyright{
-        line-height: 1.125rem;
-        font-weight: 400;
-        font-size: .8125rem;
-        color: $primary3;
-        font-family: avenir;
+        @include info-text
     }
 }

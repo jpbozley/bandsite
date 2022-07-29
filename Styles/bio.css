@@ -40,7 +40,7 @@
   line-height: 2rem;
   font-family: avenir;
   font-weight: 400;
-  color: white;
+  color: #FFFFFF;
   margin: 1rem;
   margin-bottom: 0rem;
   text-align: center;
@@ -60,7 +60,7 @@
 }
 .header__nav-item {
   padding: 1rem 3rem;
-  color: white;
+  color: #FFFFFF;
   font-family: avenir;
   font-weight: 600;
   font-size: 1rem;
@@ -108,7 +108,7 @@
 .hero__title {
   font-family: avenir;
   font-weight: 600;
-  color: white;
+  color: #FFFFFF;
   position: relative;
   z-index: 3;
 }
@@ -158,8 +158,8 @@
 }
 .about__quote {
   font-family: avenir;
-  color: #323232;
   font-weight: 600;
+  color: #323232;
   line-height: 1.5rem;
   margin: 0;
 }
@@ -214,8 +214,8 @@
 .gallery__title {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 600;
   font-family: avenir;
+  font-weight: 600;
   color: #323232;
   padding-top: 1rem;
 }
@@ -356,9 +356,9 @@
   }
 }
 .footer__copyright {
+  font-family: avenir;
   line-height: 1.125rem;
   font-weight: 400;
   font-size: 0.8125rem;
   color: #FFFFFF;
-  font-family: avenir;
 }/*# sourceMappingURL=bio.css.map */

@@ -1,0 +1,20 @@
+@mixin info-text{font-family: avenir;
+line-height: 1.125rem;
+font-weight: 400;
+font-size: .8125rem;
+color: $primary3};
+
+@mixin title-text{
+    font-family: avenir;
+    font-weight: 600;
+    color: $primary;
+}
+
+@mixin contact-text{
+    font-family: avenir;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.375rem;
+    color: $primary3;
+    margin: 0;
+}
