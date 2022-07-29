@@ -18,3 +18,10 @@ color: $primary3};
     color: $primary3;
     margin: 0;
 }
+
+@mixin about-padding{
+    @media(min-width:$tablet){
+        padding-left: 2.5rem;
+        padding-right:2.5rem;
+    }
+}

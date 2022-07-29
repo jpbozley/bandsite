@@ -20,7 +20,8 @@
 
 @import "./partials/_colors";
 @import "./partials/_screensizes";
-@import "./partials/_typography";
+@import "./partials/_mixins";
+
 
 .header{
     display:flex;
@@ -46,11 +47,32 @@
         text-align: center;
     }
     &__link{
+        display: inline;
+        text-align: center;
+    }
+    &__logo{
+            width: 30vw;
+            padding-top: 1rem;
+            @media (min-width:$tablet) {
+                padding-left:3rem;
+                padding-right: 5rem;
+                align-self: center;
+                padding-bottom:1.5rem;
+                padding-top:3rem;
+                width: 35vw;
+            }
+            @media(min-width:$desktop){
+                padding-left:5rem;
+                width: 25vw;
+            }
+        }
+    &__link{
         text-decoration: none;
     }
     &__nav{
         margin:0;
         padding:0;
+        align-self: center;
     }
     &__nav-list{
         padding:0;
@@ -63,9 +85,15 @@
         color: $primary3;
         font-family: avenir;
         font-weight: 600;
+        text-align: center;
         font-size:1rem;
+        width: 50vw;
+        @media (min-width: $tablet) {
+            width: 20vw;
+            padding-bottom:3rem;   
+            padding-top:3rem;     }
         &--active{
-            border-bottom: 4px solid white;
+            border-bottom: 4px solid $primary3;
             font-weight: 600;
         }
     }
@@ -73,7 +101,6 @@
         flex-direction: row;
         justify-content: flex-start;
     }
-
 }
 
 
@@ -127,12 +154,18 @@
     padding-left: 1rem;
     padding-right: 1rem;
     @media (min-width: $tablet) {
-        margin-left: 10vw;
-        margin-right: 10vw;  
-      }
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+      };
+    @media(min-width:$desktop){
+        margin-left:auto;
+        margin-right:auto;
+    }
     &__title{
         @include title-text;
         font-size: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
         @media (min-width:$tablet) {
             font-size: 2rem;
         }
@@ -141,21 +174,25 @@
         }
     }
     &__image{
-        margin-bottom:1rem;
+        padding-bottom:1rem;
+        @include about-padding;
     }
     &__quote{
         @include title-text;
         line-height: 1.5rem;;
         margin:0;
+        padding-bottom:1rem;
+        @include about-padding;
     }
     &__band-name{
         font-family: avenir;
         font-weight: 400;
         color: $secondary;
         font-size: 0.875rem;
-        margin-top:1rem;
-        margin-bottom:1rem;
+        padding-bottom:1rem;
+        margin:0;
         line-height: 1.375rem;
+        @include about-padding;
         @media (min-width: $tablet) {
             margin-top: 2rem;
             font-weight: 600;
@@ -166,6 +203,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        @include about-padding;
     }}
     &__info{
         margin-top:0;
@@ -285,13 +323,6 @@
         @include info-text;
     }
     &__site-name{
-        padding-top: 2rem;
-        color: $primary3;
-        font-family: avenir;
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 2rem;
-        margin: 0;
         @media (min-width:$tablet) {
             display:none;
         }
