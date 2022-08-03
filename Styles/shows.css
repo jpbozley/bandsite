@@ -248,12 +248,19 @@
 }
 @media (min-width: 768px) {
   .hero {
-    height: 70vw;
+    height: 75vh;
   }
 }
 @media (min-width: 1280px) {
   .hero {
     height: 100vh;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__container {
+    width: 50vw;
+    align-self: center;
   }
 }
 .hero__iframe {
@@ -269,14 +276,12 @@
   font-weight: 100;
   width: 80vw;
 }
-@media (min-width: 768px) {
-  .hero__iframe {
-    padding-bottom: 3rem;
-  }
-}
 @media (min-width: 1280px) {
   .hero__iframe {
-    padding-bottom: 5rem;
+    align-self: center;
+    width: 50vw;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 .hero__iframe-link {
@@ -309,8 +314,10 @@
 }
 @media (min-width: 1280px) {
   .hero__title {
-    font-size: 3rem;
+    font-size: 2rem;
     padding-left: 5rem;
+    font-weight: 600;
+    align-self: center;
   }
 }
 .hero__album-name {
@@ -328,7 +335,9 @@
 }
 @media (min-width: 1280px) {
   .hero__album-name {
-    font-size: 7rem;
+    margin-top: 0;
+    font-size: 5rem;
     padding-left: 5rem;
+    align-self: center;
   }
 }/*# sourceMappingURL=shows.css.map */

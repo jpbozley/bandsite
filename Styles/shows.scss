@@ -17,10 +17,17 @@
     padding-left: 1rem;
     flex-direction: column;
     @media (min-width:$tablet) {
-        height:70vw;
+        height:75vh;
     }
     @media (min-width:$desktop) {
-       height:100vh; 
+       height:100vh;
+       flex-direction: row;
+    }
+    &__container{
+        @media (min-width:$desktop) {
+            width: 50vw;
+            align-self: center;
+         }
     }
     &__iframe{
         z-index: 3;
@@ -34,12 +41,12 @@
         font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
         font-weight: 100;
         width: 80vw;
-        @media (min-width:$tablet) {
-            padding-bottom: 3rem;
-        };
-        @media(min-width:$desktop){
-            padding-bottom:5rem;
-        };
+        @media (min-width:$desktop) {
+            align-self: center;
+            width: 50vw;
+            padding-left: 5rem;
+            padding-right: 5rem;
+         }
     }
     &__iframe-link{
         color: #cccccc;
@@ -67,8 +74,10 @@
             padding-left:1.5rem;
         };
         @media(min-width:$desktop){
-            font-size:3rem;
+            font-size:2rem;
             padding-left:5rem;
+            font-weight: 600;
+            align-self: center;
         };
     }
     &__album-name{
@@ -82,8 +91,10 @@
             padding-left:1.5rem;
         };
         @media(min-width:$desktop){
-            font-size:7rem;
+            margin-top: 0;
+            font-size:5rem;
             padding-left:5rem;
+            align-self: center;
         };
     }
 }
