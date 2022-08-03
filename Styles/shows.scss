@@ -5,3 +5,21 @@
 
 
 
+.hero{
+
+    background-image: url(../Assets/Images/);
+    background-position: center;
+    position:relative;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    @media (min-width:$tablet) {
+        height:50vw;
+    }
+    @media (min-width:$desktop) {
+       height:100vh; 
+    }
+
+}
