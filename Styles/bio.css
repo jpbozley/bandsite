@@ -447,4 +447,22 @@
 }
 .gallery__photo:hover {
   filter: grayscale(0);
+}
+
+.form__title {
+  font-family: avenir;
+  font-size: 1.5rem;
+}
+.form__profile-pic-div {
+  height: 2.25rem;
+  width: 2.25rem;
+  text-align: center;
+  padding: 0;
+  display: inline-block;
+}
+.form__profile-pic-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  padding: 0;
 }/*# sourceMappingURL=bio.css.map */

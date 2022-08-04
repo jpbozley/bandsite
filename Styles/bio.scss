@@ -163,3 +163,23 @@
     }
 }
 
+.form{
+    &__title{
+        font-family: avenir;
+        font-size: 1.5rem;
+    }
+    &__profile-pic-div{
+        height: 2.25rem;
+        width: 2.25rem;
+        text-align: center;
+        padding:0;
+        display: inline-block;
+
+    }
+    &__profile-pic-img{
+        height:100%;
+        width: 100%;
+        border-radius: 50%;
+        padding: 0;
+    }
+}
