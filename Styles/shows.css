@@ -248,7 +248,7 @@
 }
 @media (min-width: 768px) {
   .hero {
-    height: 75vh;
+    height: 80vh;
   }
 }
 @media (min-width: 1280px) {
@@ -340,4 +340,44 @@
     padding-left: 5rem;
     align-self: center;
   }
+}
+
+.tour-dates__title {
+  font-family: avenir;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.tour-dates__list {
+  padding-left: 0;
+}
+.tour-dates__header {
+  font-size: 0.875rem;
+  color: #AFAFAF;
+  font-family: avenir;
+  font-weight: 600;
+}
+.tour-dates__info {
+  font-size: 0.875rem;
+  color: #323232;
+  font-family: avenir;
+}
+.tour-dates__info--bold {
+  font-weight: bold;
+}
+.tour-dates__item {
+  border-bottom: 1px #E1E1E1;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+  list-style: none;
+}
+.tour-dates__button {
+  background-color: black;
+  color: #FFFFFF;
+  font-family: avenir;
+  width: 90vw;
+  font-weight: 600;
+  border-radius: 0.3125rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }/*# sourceMappingURL=shows.css.map */

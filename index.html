@@ -12,8 +12,8 @@
         <a href="./index.html" class="header__link"><img src="./Assets/Logo/Logo-bandsite.svg" alt="band-logo" class="header__logo"></a>
             <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item header__nav-item--active">Biography</li>
-                <li class="header__nav-item">Shows</li>
+                <li class="header__nav-item header__nav-item--active"><a href="./index.html" class="header__link">Biography</a></li>
+                <li class="header__nav-item"><a href="./pages/shows.html" class="header__link">Shows</a></li>
             </ul>
         </nav>
     </header>
@@ -71,6 +71,22 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <h2 class="comments__title">Join the Conversation</h2>
+        
+            <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter your name">
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <button>Comment</button>
+            </form>
+
+
+            <!-- To be populated by JS -->
+        </section>
+
     </main>
     <footer class="footer">
         <div class="footer__container">
@@ -79,9 +95,9 @@
             Get in Touch
         </h3>
         <div class="footer__socials">
-            <img src="./Assets/Icons/SVG/Icon-instagram.svg" alt="icon-instagram" class="footer__icon">
-            <img src="./Assets/Icons/SVG/Icon-facebook.svg" alt="Icon-facebook" class="footer__icon">
-            <img src="./Assets/Icons/SVG/Icon-twitter.svg" alt="icon-twitter" class="footer__icon">
+            <a href="http://www.instagram.com"><img src="./Assets/Icons/SVG/Icon-instagram.svg" alt="icon-instagram" class="footer__icon"></a>
+            <a href="http://www.facebook.com"><img src="./Assets/Icons/SVG/Icon-facebook.svg" alt="Icon-facebook" class="footer__icon"></a>
+            <a href="http://www.twitter.com"><img src="./Assets/Icons/SVG/Icon-twitter.svg" alt="icon-twitter" class="footer__icon"></a>
         </div>
     </div>
 <img src="./Assets/Logo/Logo-bandsite.svg" alt="BANDSITE" class="footer__site-name-top">

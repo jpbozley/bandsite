@@ -17,7 +17,7 @@
     padding-left: 1rem;
     flex-direction: column;
     @media (min-width:$tablet) {
-        height:75vh;
+        height:80vh;
     }
     @media (min-width:$desktop) {
        height:100vh;
@@ -96,5 +96,53 @@
             padding-left:5rem;
             align-self: center;
         };
+    }
+}
+
+.tour-dates{
+    @media(min-width:$tablet){
+
+    }
+    @media (min-width:$desktop) {
+        
+    }
+    &__title{
+        font-family: avenir;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-bottom: 1rem;
+    }
+    &__list{
+        padding-left: 0;
+    }
+    &__header{
+        font-size: .875rem;
+        color: $primary2;
+        font-family: avenir;
+        font-weight: 600;
+    }
+    &__info{
+        font-size: .875rem;
+        color: $primary;
+        font-family: avenir;
+        &--bold{
+            font-weight: bold;
+        }
+    }
+    &__item{
+    border-bottom: 1px $secondary2;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    list-style: none;
+    }
+    &__button{
+        background-color: black;
+        color: $primary3;
+        font-family: avenir;
+        width: 90vw;
+        font-weight: 600;
+        border-radius: .3125rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
     }
 }
