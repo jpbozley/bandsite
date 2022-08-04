@@ -449,9 +449,17 @@
   filter: grayscale(0);
 }
 
+.form__body {
+  display: flex;
+  flex-direction: row;
+}
 .form__title {
   font-family: avenir;
   font-size: 1.5rem;
+}
+.form__inputs {
+  display: flex;
+  flex-direction: column;
 }
 .form__profile-pic-div {
   height: 2.25rem;

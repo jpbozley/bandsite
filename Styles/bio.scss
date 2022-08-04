@@ -164,9 +164,17 @@
 }
 
 .form{
+    &__body{
+        display:flex;
+        flex-direction: row;
+    }
     &__title{
         font-family: avenir;
         font-size: 1.5rem;
+    }
+    &__inputs{
+        display: flex;
+        flex-direction: column;
     }
     &__profile-pic-div{
         height: 2.25rem;
