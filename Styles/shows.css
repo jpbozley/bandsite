@@ -366,9 +366,9 @@
   font-weight: bold;
 }
 .tour-dates__item {
-  border-bottom: 1px #E1E1E1;
-  padding-bottom: 2px;
-  margin-bottom: 2px;
+  border-bottom: 1px solid #E1E1E1;
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
   list-style: none;
 }
 .tour-dates__button {
