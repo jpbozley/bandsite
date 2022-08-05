@@ -499,14 +499,17 @@
 .comments__item {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #AFAFAF;
+  border-top: 1px solid #AFAFAF;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .comments__list {
   list-style: none;
   padding-left: 0;
 }
 .comments__profile-pic-div {
-  background-color: grey;
+  margin-top: 0.5rem;
+  background-color: #AFAFAF;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -522,7 +525,20 @@
   font-weight: 600;
   color: primary;
 }
+.comments__date {
+  font-family: avenir;
+  font-weight: 400;
+  color: #AFAFAF;
+}
+.comments__text {
+  font-family: avenir;
+  font-weight: 400;
+  color: #323232;
+  padding-top: 0;
+  margin-top: 0;
+}
 .comments__container {
   display: flex;
   flex-direction: column;
+  padding-left: 0.5rem;
 }/*# sourceMappingURL=bio.css.map */

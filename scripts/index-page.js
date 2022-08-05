@@ -34,11 +34,13 @@ function displayComments(arr){
 
     let commentDate=document.createElement("p");
     commentDate.innerText=arr.date;
+    commentDate.classList.add("comments__date")
 
     let commentText=document.createElement("p");
     commentText.innerText=arr.comment;
+    commentText.classList.add("comments__text")
 
-    
+
     commentSection.appendChild(comment);
     comment.appendChild(profilepic);
     comment.appendChild(commentDiv);

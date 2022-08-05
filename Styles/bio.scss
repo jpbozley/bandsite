@@ -217,14 +217,17 @@
     &__item{
         display:flex;
         flex-direction: row;
-        border-bottom: 1px solid $primary2;
+        border-top: 1px solid $primary2;
+        padding-top: .5rem;
+        margin-bottom: .5rem;
     }
     &__list{
         list-style: none;
         padding-left: 0;
     }
     &__profile-pic-div{
-        background-color: grey;
+        margin-top: .5rem;
+        background-color: $primary2;
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 50%;
@@ -239,10 +242,22 @@
         font-family: avenir;
         font-weight: 600;
         color: primary;
-
+    }
+    &__date{
+        font-family: avenir;
+        font-weight: 400;
+        color: $primary2;
+    }
+    &__text{
+        font-family: avenir;
+        font-weight: 400;
+        color: $primary;
+        padding-top: 0;
+        margin-top: 0;
     }
     &__container{
         display:flex;
         flex-direction: column;
+        padding-left: .5rem;
     }
 }
