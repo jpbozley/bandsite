@@ -342,6 +342,23 @@
   }
 }
 
+.tour-dates__header--fixed {
+  display: none;
+  list-style: none;
+  padding-left: 1rem;
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .tour-dates__header--fixed {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .tour-dates__header-item--fixed {
+    width: 20vw;
+  }
+}
 .tour-dates__title {
   font-family: avenir;
   font-size: 1.5rem;
@@ -357,10 +374,20 @@
   font-family: avenir;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  .tour-dates__header {
+    display: none;
+  }
+}
 .tour-dates__info {
   font-size: 0.875rem;
   color: #323232;
   font-family: avenir;
+}
+@media (min-width: 768px) {
+  .tour-dates__info {
+    width: 20vw;
+  }
 }
 .tour-dates__info--bold {
   font-weight: bold;
@@ -371,6 +398,15 @@
   margin-bottom: 0.5rem;
   list-style: none;
 }
+@media (min-width: 768px) {
+  .tour-dates__item {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+  }
+}
 .tour-dates__button {
   background-color: black;
   color: #FFFFFF;
@@ -380,4 +416,9 @@
   border-radius: 0.3125rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .tour-dates__button {
+    width: 20vw;
+  }
 }/*# sourceMappingURL=shows.css.map */

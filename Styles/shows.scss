@@ -106,6 +106,22 @@
     @media (min-width:$desktop) {
         
     }
+    &__header--fixed{
+        display:none;
+        list-style: none;
+        padding-left: 1rem;
+        margin-left:0;
+        @media(min-width:$tablet){
+            display:flex;
+            justify-content: space-between;
+        }
+    }
+    &__header-item--fixed{
+        @media(min-width:$tablet){
+            width: 20vw;
+
+        }
+    }
     &__title{
         font-family: avenir;
         font-size: 1.5rem;
@@ -120,11 +136,17 @@
         color: $primary2;
         font-family: avenir;
         font-weight: 600;
+        @media (min-width:$tablet) {
+            display: none;
+        }
     }
     &__info{
         font-size: .875rem;
         color: $primary;
         font-family: avenir;
+        @media(min-width:$tablet){
+            width:20vw;
+        }
         &--bold{
             font-weight: bold;
         }
@@ -134,6 +156,13 @@
     padding-bottom: 1rem;
     margin-bottom: .5rem;
     list-style: none;
+    @media(min-width:$tablet){
+        display:flex;
+        flex-direction: row;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        justify-content: space-between;
+    }
     }
     &__button{
         background-color: black;
@@ -144,5 +173,8 @@
         border-radius: .3125rem;
         padding-top: .5rem;
         padding-bottom: .5rem;
+        @media(min-width:$tablet){
+            width: 20vw;
+        }
     }
 }
