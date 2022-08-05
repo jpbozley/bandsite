@@ -167,10 +167,27 @@
     &__body{
         display:flex;
         flex-direction: row;
+        @media(min-width:$tablet){
+            padding-left: 7.5vw;
+            padding-right: 7.5vw
+        }
+        @media(min-width:$desktop){
+            padding-left: 30vw;
+            padding-right:30vw;
+        }
     }
     &__title{
         font-family: avenir;
         font-size: 1.5rem;
+        @media(min-width:$tablet){
+            padding-left: 2rem;
+            font-size: 2.5rem;
+            line-height: 2.75rem;
+            font-weight: 600;
+        }
+        @media(min-width:$desktop){
+            padding-left:5rem;
+        }
     }
     &__inputs{
         display: flex;
@@ -187,6 +204,12 @@
     }
     &__box{
         margin-bottom: .5rem;
+        @media(min-width: $tablet){
+            width: 75vw;
+        }
+        @media(min-width:$desktop){
+            width: 30vw;
+        }
     }
     &__profile-pic-div{
         height: 2.25rem;
@@ -210,6 +233,10 @@
         padding: .75rem 0rem;
         border-radius: 5%;
         margin: .5rem 0rem;
+        @media (min-width:$tablet) {
+            width:15vw;
+            align-self: flex-end;
+        }
     }
 }
 
@@ -220,10 +247,20 @@
         border-top: 1px solid $primary2;
         padding-top: .5rem;
         margin-bottom: .5rem;
+
     }
     &__list{
         list-style: none;
         padding-left: 0;
+        @media (min-width:$tablet) {
+            padding-right: 7.5vw;
+            padding-left: 7.5vw;
+        }
+
+        @media(min-width:$desktop){
+            padding-right: 30vw;
+            padding-left: 30vw;
+        }
     }
     &__profile-pic-div{
         margin-top: .5rem;

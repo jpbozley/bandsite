@@ -453,9 +453,34 @@
   display: flex;
   flex-direction: row;
 }
+@media (min-width: 768px) {
+  .form__body {
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+  }
+}
+@media (min-width: 1280px) {
+  .form__body {
+    padding-left: 30vw;
+    padding-right: 30vw;
+  }
+}
 .form__title {
   font-family: avenir;
   font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .form__title {
+    padding-left: 2rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1280px) {
+  .form__title {
+    padding-left: 5rem;
+  }
 }
 .form__inputs {
   display: flex;
@@ -472,6 +497,16 @@
 }
 .form__box {
   margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .form__box {
+    width: 75vw;
+  }
+}
+@media (min-width: 1280px) {
+  .form__box {
+    width: 30vw;
+  }
 }
 .form__profile-pic-div {
   height: 2.25rem;
@@ -495,6 +530,12 @@
   border-radius: 5%;
   margin: 0.5rem 0rem;
 }
+@media (min-width: 768px) {
+  .form__button {
+    width: 15vw;
+    align-self: flex-end;
+  }
+}
 
 .comments__item {
   display: flex;
@@ -506,6 +547,18 @@
 .comments__list {
   list-style: none;
   padding-left: 0;
+}
+@media (min-width: 768px) {
+  .comments__list {
+    padding-right: 7.5vw;
+    padding-left: 7.5vw;
+  }
+}
+@media (min-width: 1280px) {
+  .comments__list {
+    padding-right: 30vw;
+    padding-left: 30vw;
+  }
 }
 .comments__profile-pic-div {
   margin-top: 0.5rem;

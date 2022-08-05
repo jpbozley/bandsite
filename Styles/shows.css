@@ -342,6 +342,19 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .tour-dates {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1280px) {
+  .tour-dates__desktop-container {
+    width: 70vw;
+    padding-right: 4.5rem;
+  }
+}
 .tour-dates__header--fixed {
   display: none;
   list-style: none;
@@ -354,6 +367,12 @@
     justify-content: space-between;
   }
 }
+.tour-dates__header-item--fixed {
+  font-size: 0.875rem;
+  color: #AFAFAF;
+  font-family: avenir;
+  font-weight: 600;
+}
 @media (min-width: 768px) {
   .tour-dates__header-item--fixed {
     width: 20vw;
@@ -364,6 +383,13 @@
   font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 1rem;
+}
+@media (min-width: 1280px) {
+  .tour-dates__title {
+    width: 30vw;
+    font-size: 2.25rem;
+    padding-left: 5vw;
+  }
 }
 .tour-dates__list {
   padding-left: 0;
