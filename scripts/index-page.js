@@ -15,6 +15,8 @@ let commentsArray=[
 
 const commentSection=document.querySelector(".comments__list");
 
+
+
 function displayComments(arr){
     let comment=document.createElement("li");
     comment.classList.add("comments__item")
@@ -50,6 +52,27 @@ function displayComments(arr){
     commentDiv.appendChild(commentText);
 };
 
+
 commentsArray.forEach((comment)=>{
     displayComments(comment)
 });
+
+let form=document.querySelector(".form__body")
+form.addEventListener('submit',function(event){
+    event.preventDefault();
+    let newName=event.target.newName.value;
+    let newComment=event.target.newComment.value;
+    let newDate=new Date();
+    let addedComment={
+        user: newName,
+        date: newDate,
+        comment:newComment
+        };
+    commentsArray=[];
+    commentsArray.unshift(addedComment);
+    commentsArray.forEach((comment)=>{
+        displayComments(comment)
+    })
+    form.reset();
+})
+
