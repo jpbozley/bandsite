@@ -178,6 +178,15 @@
         justify-content: space-between;
     }
     }
+    &__item:hover{background-color: $secondary3;
+    }
+    &__item--selected{
+        background-color:$primary2;
+    }
+    &__item--selected:hover{background-color: $primary2;}
+    
+
+
     &__button{
         background-color: black;
         color: $primary3;

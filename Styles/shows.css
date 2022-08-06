@@ -433,6 +433,15 @@
     justify-content: space-between;
   }
 }
+.tour-dates__item:hover {
+  background-color: #FAFAFA;
+}
+.tour-dates__item--selected {
+  background-color: #AFAFAF;
+}
+.tour-dates__item--selected:hover {
+  background-color: #AFAFAF;
+}
 .tour-dates__button {
   background-color: black;
   color: #FFFFFF;

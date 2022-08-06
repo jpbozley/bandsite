@@ -69,6 +69,17 @@ function displayShows(arr){
     show.appendChild(locationHeading);
     show.appendChild(showLocation);
     show.appendChild(buyButton);
+
+
+    
+    let clickHandler=function(event){
+        let selectedDate=document.querySelectorAll(".tour-dates__item")
+        for(let i=0; i<selectedDate.length; i++){
+        selectedDate[i].classList.remove("tour-dates__item--selected");
+        event.currentTarget.classList.add("tour-dates__item--selected")
+    }
+}
+show.addEventListener('click',clickHandler);
 }
 
 showsArray.forEach((show)=>{
