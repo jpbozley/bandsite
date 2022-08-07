@@ -298,7 +298,7 @@
   height: 100%;
 }
 .hero__title {
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 400;
   color: #FFFFFF;
   position: relative;
@@ -321,7 +321,7 @@
   }
 }
 .hero__album-name {
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 600;
   color: #FFFFFF;
   position: relative;
@@ -370,7 +370,7 @@
 .tour-dates__header-item--fixed {
   font-size: 0.875rem;
   color: #AFAFAF;
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 600;
 }
 @media (min-width: 768px) {
@@ -379,9 +379,9 @@
   }
 }
 .tour-dates__title {
-  font-family: avenir;
+  font-family: avenir, sans-serif;
+  font-weight: 700;
   font-size: 1.5rem;
-  font-weight: bold;
   padding-bottom: 1rem;
 }
 @media (min-width: 1280px) {
@@ -397,7 +397,7 @@
 .tour-dates__header {
   font-size: 0.875rem;
   color: #AFAFAF;
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 600;
 }
 @media (min-width: 768px) {
@@ -408,7 +408,7 @@
 .tour-dates__info {
   font-size: 0.875rem;
   color: #323232;
-  font-family: avenir;
+  font-family: avenir, sans-serif;
 }
 @media (min-width: 768px) {
   .tour-dates__info {
@@ -445,9 +445,9 @@
 .tour-dates__button {
   background-color: black;
   color: #FFFFFF;
-  font-family: avenir;
-  width: 90vw;
+  font-family: avenir, sans-serif;
   font-weight: 600;
+  width: 90vw;
   border-radius: 0.3125rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;

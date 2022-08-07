@@ -2,6 +2,7 @@
 @import "./partials/_mixins";
 @import "./partials/_colors";
 @import "./partials/_global";
+@import "./partials/_fonts";
 
 
 
@@ -62,8 +63,7 @@
         height:100%;
     }
     &__title{
-        font-family: avenir;
-        font-weight: 400;
+        @include avenir-light;
         color: $primary3;
         position: relative;
         z-index: 3;
@@ -81,8 +81,7 @@
         };
     }
     &__album-name{
-        font-family: avenir;
-        font-weight: 600;
+        @include avenir-standard;
         color: $primary3;
         position: relative;
         z-index: 3;
@@ -125,16 +124,14 @@
     &__header-item--fixed{
         font-size: .875rem;
         color: $primary2;
-        font-family: avenir;
-        font-weight: 600;
+        @include avenir-standard;
         @media(min-width:$tablet){
             width: 20vw;
         }
     }
     &__title{
-        font-family: avenir;
+        @include avenir-bold;
         font-size: 1.5rem;
-        font-weight: bold;
         padding-bottom: 1rem;
         @media (min-width: $desktop) {
             width: 30vw;
@@ -148,8 +145,7 @@
     &__header{
         font-size: .875rem;
         color: $primary2;
-        font-family: avenir;
-        font-weight: 600;
+        @include avenir-standard;
         @media (min-width:$tablet) {
             display: none;
         }
@@ -157,7 +153,7 @@
     &__info{
         font-size: .875rem;
         color: $primary;
-        font-family: avenir;
+        font-family: avenir, sans-serif;
         @media(min-width:$tablet){
             width:20vw;
         }
@@ -190,9 +186,8 @@
     &__button{
         background-color: black;
         color: $primary3;
-        font-family: avenir;
+        @include avenir-standard;
         width: 90vw;
-        font-weight: 600;
         border-radius: .3125rem;
         padding-top: .5rem;
         padding-bottom: .5rem;

@@ -3,7 +3,7 @@
 @import "./partials/_screensizes";
 @import "./partials/_mixins";
 @import "./partials/_global";
-
+@import "./partials/_fonts";
 
 .hero{
 
@@ -32,8 +32,7 @@
         height:100%;
     }
     &__title{
-        font-family: avenir;
-        font-weight: 600;
+        @include avenir-standard;
         color: $primary3;
         position: relative;
         z-index: 3;
@@ -85,8 +84,7 @@
         @include about-padding;
     }
     &__band-name{
-        font-family: avenir;
-        font-weight: 400;
+        @include avenir-light;
         color: $secondary;
         font-size: 0.875rem;
         padding-bottom:1rem;
@@ -95,7 +93,7 @@
         @include about-padding;
         @media (min-width: $tablet) {
             margin-top: 2rem;
-            font-weight: 600;
+            @include avenir-standard;
             font-size: 1rem;
           }
     }
@@ -107,8 +105,7 @@
     }}
     &__info{
         margin-top:0;
-        font-family: avenir;
-        font-weight: 400;
+        @include avenir-light;
         font-size: 0.8125rem;
         color: $primary;
         line-height: 1.125rem;
@@ -177,13 +174,13 @@
         }
     }
     &__title{
-        font-family: avenir;
+        font-family: avenir, sans-serif;
         font-size: 1.5rem;
         @media(min-width:$tablet){
             padding-left: 2rem;
             font-size: 2.5rem;
             line-height: 2.75rem;
-            font-weight: 600;
+            @include avenir-standard;
         }
         @media(min-width:$desktop){
             padding-left:5rem;
@@ -198,8 +195,7 @@
     &__heading{
         font-size: .875rem;
         color: $primary2;
-        font-family: avenir;
-        font-weight: 600;
+        @include avenir-standard;
         padding-bottom:.5rem;
     }
     &__box{
@@ -228,8 +224,7 @@
     &__button{
         background: $primary;
         color: $primary3;
-        font-family: avenir; 
-        font-weight: 600;
+        @include avenir-standard;
         padding: .75rem 0rem;
         border-radius: 5%;
         margin: .5rem 0rem;
@@ -276,18 +271,15 @@
         justify-content: space-between;
     }
     &__username{
-        font-family: avenir;
-        font-weight: 600;
+        @include avenir-standard;
         color: primary;
     }
     &__date{
-        font-family: avenir;
-        font-weight: 400;
+        @include avenir-light;
         color: $primary2;
     }
     &__text{
-        font-family: avenir;
-        font-weight: 400;
+        @include avenir-light;
         color: $primary;
         padding-top: 0;
         margin-top: 0;

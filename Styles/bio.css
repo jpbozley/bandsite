@@ -265,7 +265,7 @@
   height: 100%;
 }
 .hero__title {
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 600;
   color: #FFFFFF;
   position: relative;
@@ -344,7 +344,7 @@
   }
 }
 .about__band-name {
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 400;
   color: #000000;
   font-size: 0.875rem;
@@ -361,6 +361,7 @@
 @media (min-width: 768px) {
   .about__band-name {
     margin-top: 2rem;
+    font-family: avenir, sans-serif;
     font-weight: 600;
     font-size: 1rem;
   }
@@ -380,7 +381,7 @@
 }
 .about__info {
   margin-top: 0;
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 400;
   font-size: 0.8125rem;
   color: #323232;
@@ -466,7 +467,7 @@
   }
 }
 .form__title {
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-size: 1.5rem;
 }
 @media (min-width: 768px) {
@@ -474,6 +475,7 @@
     padding-left: 2rem;
     font-size: 2.5rem;
     line-height: 2.75rem;
+    font-family: avenir, sans-serif;
     font-weight: 600;
   }
 }
@@ -491,7 +493,7 @@
 .form__heading {
   font-size: 0.875rem;
   color: #AFAFAF;
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 600;
   padding-bottom: 0.5rem;
 }
@@ -524,7 +526,7 @@
 .form__button {
   background: #323232;
   color: #FFFFFF;
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 600;
   padding: 0.75rem 0rem;
   border-radius: 5%;
@@ -574,17 +576,17 @@
   justify-content: space-between;
 }
 .comments__username {
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 600;
   color: primary;
 }
 .comments__date {
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 400;
   color: #AFAFAF;
 }
 .comments__text {
-  font-family: avenir;
+  font-family: avenir, sans-serif;
   font-weight: 400;
   color: #323232;
   padding-top: 0;

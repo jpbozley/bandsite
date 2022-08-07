@@ -61,15 +61,26 @@ let form=document.querySelector(".form__body")
 form.addEventListener('submit',function(event){
     event.preventDefault();
     let newName=event.target.newName.value;
-    let newComment=event.target.newComment.value;
+
+
+    // let month=new Date().getMonth;
+    // let day=new Date().getDate;
+    // let todaysDate=month+"/"+day+"/"+year;
+
     let newDate=new Date();
+    let newComment=event.target.newComment.value;
     let addedComment={
         user: newName,
         date: newDate,
         comment:newComment
         };
-    commentsArray=[];
+
+
+    commentSection.innerHTML=null;
+
     commentsArray.unshift(addedComment);
+
+
     commentsArray.forEach((comment)=>{
         displayComments(comment)
     })

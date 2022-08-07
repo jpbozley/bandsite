@@ -1,0 +1,16 @@
+
+
+@mixin avenir-light{
+    font-family: avenir, sans-serif;
+    font-weight: 400};
+;
+
+@mixin avenir-standard{
+    font-family: avenir, sans-serif;
+    font-weight: 600;
+};
+
+@mixin avenir-bold{
+    font-family: avenir, sans-serif;
+    font-weight: 700;
+}
