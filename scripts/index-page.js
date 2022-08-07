@@ -60,14 +60,18 @@ commentsArray.forEach((comment)=>{
 let form=document.querySelector(".form__body")
 form.addEventListener('submit',function(event){
     event.preventDefault();
+
+//setting date
+
+    let today=new Date();
+    let month=today.getMonth()+1;
+    let day=today.getDate();
+    let year=today.getFullYear();
+    let formattedDate=month+"/"+day+"/"+year;
+
+
     let newName=event.target.newName.value;
-
-
-    // let month=new Date().getMonth;
-    // let day=new Date().getDate;
-    // let todaysDate=month+"/"+day+"/"+year;
-
-    let newDate=new Date();
+    let newDate=formattedDate;
     let newComment=event.target.newComment.value;
     let addedComment={
         user: newName,
@@ -77,10 +81,7 @@ form.addEventListener('submit',function(event){
 
 
     commentSection.innerHTML=null;
-
     commentsArray.unshift(addedComment);
-
-
     commentsArray.forEach((comment)=>{
         displayComments(comment)
     })
