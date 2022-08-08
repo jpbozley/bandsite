@@ -184,7 +184,7 @@
 
 
     &__button{
-        background-color: black;
+        background-color: $primary;
         color: $primary3;
         @include avenir-standard;
         width: 90vw;
@@ -194,5 +194,8 @@
         @media(min-width:$tablet){
             width: 20vw;
         }
+    };
+    &__button:hover{
+        background-color: $secondary;
     }
 }

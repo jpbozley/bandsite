@@ -538,6 +538,9 @@
     align-self: flex-end;
   }
 }
+.form__button:hover {
+  background: #000000;
+}
 
 .comments__item {
   display: flex;

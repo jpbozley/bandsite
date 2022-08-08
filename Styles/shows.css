@@ -443,7 +443,7 @@
   background-color: #AFAFAF;
 }
 .tour-dates__button {
-  background-color: black;
+  background-color: #323232;
   color: #FFFFFF;
   font-family: avenir, sans-serif;
   font-weight: 600;
@@ -456,4 +456,7 @@
   .tour-dates__button {
     width: 20vw;
   }
+}
+.tour-dates__button:hover {
+  background-color: #000000;
 }/*# sourceMappingURL=shows.css.map */
