@@ -26,7 +26,8 @@ function displayComments(arr){
     userName.classList.add("comments__username")
 
     let commentDate=document.createElement("p");
-    commentDate.innerText=new Date(arr.timestamp).toDateString();
+    let convertedDate=new Date(arr.timestamp);
+    commentDate.innerText=convertedDate.toLocaleDateString("en-US");
     commentDate.classList.add("comments__date")
 
     let commentText=document.createElement("p");
