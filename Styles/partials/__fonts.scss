@@ -1,3 +1,24 @@
+@font-face {
+    font-family: avenir;
+    src: url(../Assets/Font/AvenirNextLTPro-Regular.otf) format("opentype"),
+    url(../../Assets/Font/Alternative\ files/AvenirNextLTPro-Regular) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: avenir;
+    src: url(../Assets/Font/AvenirNextLTPro-Bold.otf) format("opentype"),
+    url(../../Assets/Font/Alternative\ files/AvenirNextLTPro-Bold) format("truetype");
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: avenir;
+    src: url(../Assets/Font/AvenirNextLTPro-Demi.otf) format("opentype")
+    url(../../Assets/Font/Alternative\ files/AvenirNextLTPro-Demi) format("truetype");
+    font-weight: 600;
+}
 
 
 @mixin avenir-light{

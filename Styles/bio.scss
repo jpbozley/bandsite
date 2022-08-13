@@ -15,10 +15,10 @@
     display: flex;
     align-items: center;
     padding-left: 1rem;
-    @media (min-width:$tablet) {
+    @include tablet{
         height:50vw;
     }
-    @media (min-width:$desktop) {
+    @include desktop{
        height:100vh; 
     }
 
@@ -36,11 +36,11 @@
         color: $primary3;
         position: relative;
         z-index: 3;
-        @media (min-width:$tablet) {
+        @include tablet{
             font-size:3rem;
             padding-left:1.5rem;
         };
-        @media(min-width:$desktop){
+        @include desktop{
             font-size:7rem;
             padding-left:5rem;
         };
@@ -52,11 +52,11 @@
     flex-direction: column;
     padding-left: 1rem;
     padding-right: 1rem;
-    @media (min-width: $tablet) {
+    @include tablet{
         margin-left: 2.25rem;
         margin-right: 2.25rem;
       };
-    @media(min-width:$desktop){
+    @include desktop{
         margin-left:auto;
         margin-right:auto;
     }
@@ -65,10 +65,10 @@
         font-size: 1.5rem;
         padding-top: 1.5rem;
         padding-bottom: 1rem;
-        @media (min-width:$tablet) {
+        @include tablet{
             font-size: 2rem;
         }
-        @media (min-width:$desktop) {
+        @include desktop{
             font-size:2.5rem;
         }
     }
@@ -91,13 +91,13 @@
         margin:0;
         line-height: 1.375rem;
         @include about-padding;
-        @media (min-width: $tablet) {
+        @include tablet{
             margin-top: 2rem;
             @include avenir-standard;
             font-size: 1rem;
           }
     }
-    &__info-container{@media (min-width: $tablet){
+    &__info-container{@include tablet{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -109,7 +109,7 @@
         font-size: 0.8125rem;
         color: $primary;
         line-height: 1.125rem;
-        @media (min-width: $tablet){
+        @include tablet{
             display: flex;
             justify-content: space-around;
             padding: .5rem;
@@ -119,7 +119,7 @@
 
 .gallery{
     background-color: $secondary3;
-    @media (min-width:$tablet) {
+    @include tablet{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
@@ -128,7 +128,7 @@
         line-height: 2rem;
         @include title-text;
         padding-top:1rem;
-        @media(min-width:$tablet){
+        @include tablet{
             padding-left: 1rem;
             font-size: 2rem;
         }
@@ -138,11 +138,11 @@
         flex-direction: column;
         align-items:center;
         justify-content: center;
-        @media (min-width:$tablet) {
+        @include tablet{
             flex-direction: row;
             flex-wrap: wrap;
         }
-        @media(min-width: $desktop){
+        @include tablet{
             margin-right: auto;
             margin-left: auto;
         }
@@ -151,7 +151,7 @@
         width: 100vw;
         padding: .5rem 1rem;
         filter: grayscale(1);
-        @media (min-width:$tablet) {
+        @include tablet{
             width: 30vw;
         }
         &:hover{
@@ -164,11 +164,11 @@
     &__body{
         display:flex;
         flex-direction: row;
-        @media(min-width:$tablet){
+        @include tablet{
             padding-left: 7.5vw;
             padding-right: 7.5vw
         }
-        @media(min-width:$desktop){
+        @include desktop{
             padding-left: 30vw;
             padding-right:30vw;
         }
@@ -176,13 +176,13 @@
     &__title{
         font-family: avenir, sans-serif;
         font-size: 1.5rem;
-        @media(min-width:$tablet){
+        @include tablet{
             padding-left: 2rem;
             font-size: 2.5rem;
             line-height: 2.75rem;
             @include avenir-standard;
         }
-        @media(min-width:$desktop){
+        @include desktop{
             padding-left:5rem;
         }
     }
@@ -200,10 +200,10 @@
     }
     &__box{
         margin-bottom: .5rem;
-        @media(min-width: $tablet){
+        @include tablet{
             width: 75vw;
         }
-        @media(min-width:$desktop){
+        @include desktop{
             width: 30vw;
         }
     }
@@ -228,7 +228,7 @@
         padding: .75rem 0rem;
         border-radius: 5%;
         margin: .5rem 0rem;
-        @media (min-width:$tablet) {
+        @include tablet{
             width:15vw;
             align-self: flex-end;
         };
@@ -250,12 +250,12 @@
     &__list{
         list-style: none;
         padding-left: 0;
-        @media (min-width:$tablet) {
+        @include tablet{
             padding-right: 7.5vw;
             padding-left: 7.5vw;
         }
 
-        @media(min-width:$desktop){
+        @include desktop{
             padding-right: 30vw;
             padding-left: 30vw;
         }

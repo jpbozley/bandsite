@@ -1,22 +1,6 @@
 *,*::before, *::after{box-sizing:border-box};
+@import "./_mixins";
 
-@font-face {
-    font-family: avenir;
-    src: url(../Assets/Font/AvenirNextLTPro-Regular.otf);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: avenir;
-    src: url(../Assets/Font/AvenirNextLTPro-Bold.otf);
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: avenir;
-    src: url(../Assets/Font/AvenirNextLTPro-Demi.otf);
-    font-weight: 600;
-}
 
 .header{
     display:flex;
@@ -26,10 +10,10 @@
     margin: 0rem;
     align-items: center;
     justify-content: space-between;
-    @media (min-width:$tablet) {
+    @include tablet{
         padding-left: 1.5rem;
     };
-    @media (min-width:$desktop) {
+    @include desktop{
         padding-left:5rem;
     }
     &__title{
@@ -49,7 +33,7 @@
     &__logo{
             width: 30vw;
             padding-top: 1rem;
-            @media (min-width:$tablet) {
+            @include tablet{
                 padding-left:3rem;
                 padding-right: 5rem;
                 align-self: center;
@@ -57,7 +41,7 @@
                 padding-top:3rem;
                 width: 35vw;
             }
-            @media(min-width:$desktop){
+            @include desktop{
                 padding-left:5rem;
                 width: 20vw;
             }
@@ -87,7 +71,7 @@
         &:hover{
             color: palevioletred;
         }
-        @media (min-width: $tablet) {
+        @include tablet{
             width: 20vw;
             padding-bottom:3rem;   
             padding-top:3rem;     }
@@ -96,7 +80,7 @@
             font-weight: 600;
         }
     }
-    @media (min-width: $tablet){
+    @include tablet{
         flex-direction: row;
         justify-content: flex-start;
     }
@@ -106,24 +90,22 @@
 .footer{
     background-color: $primary;
     padding:1rem;
-    @media (min-width:$tablet) {
+    @include tablet{
         margin-left:2.25rem;
         margin-right: 2.25rem;
-    }
-    @media (min-width:$tablet) {
         padding-left: 5rem;
         padding-right: 5rem;
     }
     &__container{
         align-items: center;
-        @media (min-width:$tablet) {
+        @include tablet{
             display:flex;
             flex-direction: row;
             justify-content: space-between;
         }
     }
     &__container-left{
-        @media (min-width:$tablet) {
+        @include tablet{
             display:flex;
             flex-direction: row;
             align-items: center;
@@ -139,7 +121,7 @@
         color: $primary3;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        @media (min-width:$tablet) {
+        @include tablet{
             margin-left:2rem;
         }    
     }
@@ -154,19 +136,19 @@
         font-size: 1.5rem;
         line-height: 2rem;
         margin: 0;
-        @media (min-width:$tablet) {
+        @include tablet{
             display:inline-flex;
             justify-self: flex-end;
             }
     }
     &__contact{
-        @media (min-width:$tablet) {
+        @include tablet{
             display:flex;
             flex-direction: row;
         }
     }
     &__grouping{
-        @media(min-width:$tablet){
+        @include tablet{
             padding-right: 2.5rem;
         }
     }
@@ -183,7 +165,7 @@
         @include info-text;
     }
     &__site-name{
-        @media (min-width:$tablet) {
+        @include tablet{
             display:none;
         }
     }
