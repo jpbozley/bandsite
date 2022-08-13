@@ -1,17 +1,8 @@
-let commentsArray=[
-    {user: "Connor Walton",
-    date: "02/17/2021",
-    comment: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains."},
+let API="https://project-1-api.herokuapp.com/comments?api_key=ab5454e8-eec0-4bad-987e-6f4afa13f39f";
 
-    {user: "Emilie Beach",
-    date: "01/09/2021",
-    comment:"I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day."},
+let commentsArray=[];
 
 
-    {user: "Miles Acosta",
-    date: "12/20/2020",
-    comment: "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough."}
-];
 
 const commentSection=document.querySelector(".comments__list");
 
@@ -31,11 +22,11 @@ function displayComments(arr){
     commentDiv.classList.add("comments__container")
 
     let userName=document.createElement("p");
-    userName.innerText=arr.user;
+    userName.innerText=arr.name;
     userName.classList.add("comments__username")
 
     let commentDate=document.createElement("p");
-    commentDate.innerText=arr.date;
+    commentDate.innerText=new Date(arr.timestamp).toDateString();
     commentDate.classList.add("comments__date")
 
     let commentText=document.createElement("p");
@@ -53,46 +44,34 @@ function displayComments(arr){
 };
 
 
-commentsArray.forEach((comment)=>{
-    displayComments(comment)
-});
+axios
+    .get(API)
+    .then((response)=>{(commentsArray=response.data);
+    commentsArray.sort(function(a,b){return b.timestamp-a.timestamp});
+    commentsArray.forEach((comment)=>displayComments(comment))
+    .catch((error)=>console.error(error))});
 
 let form=document.querySelector(".form__body")
 form.addEventListener('submit',function(event){
     event.preventDefault();
 
-//setting date
-
-    let today=new Date();
-    let month=today.getMonth()+1;
-    let day=today.getDate();
-    let year=today.getFullYear();
-
-    if(day<10){
-        day='0'+day;
-    }
-    if(month<10){
-        month='0'+month;
-    }
-
-    let formattedDate=month+"/"+day+"/"+year;
 
 
     let newName=event.target.newName.value;
-    let newDate=formattedDate;
     let newComment=event.target.newComment.value;
     let addedComment={
-        user: newName,
-        date: newDate,
+        name: newName,
         comment:newComment
         };
 
-
-    commentSection.innerHTML=null;
-    commentsArray.unshift(addedComment);
-    commentsArray.forEach((comment)=>{
-        displayComments(comment)
-    })
+    axios
+        .post(API, addedComment)
+        .then((response) => {
+            commentSection.innerHTML=null;
+            commentsArray.unshift(response.data);
+            commentsArray.forEach((comment)=>displayComments(comment));
+        })
+        .catch((error)=>console.error(error));
     form.reset();
 })
 
